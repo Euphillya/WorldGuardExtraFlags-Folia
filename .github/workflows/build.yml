@@ -1,5 +1,10 @@
 name: Gradle Build
-on: [push, pull_request]
+
+on:
+  push:
+  pull_request:
+  schedule:
+    - cron: '0 0 * * 1'  # tous les lundis à minuit UTC
 
 jobs:
   build:
@@ -20,7 +25,8 @@ jobs:
         distribution: 'temurin'
 
     - name: Grant execute permission to script
-      run: bash -c "chmod +x script.sh"
+      run: chmod +x script.sh
+
     - name: Update upstream and apply patches
       shell: bash
       run: |
