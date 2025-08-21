@@ -1,0 +1,25 @@
+From f86473a75930919ddc7c88d42a1cd2f8961f3a05 Mon Sep 17 00:00:00 2001
+From: Euphyllia Bierque <bierque.euphyllia@gmail.com>
+Date: Fri, 22 Aug 2025 01:47:01 +0200
+Subject: [PATCH 4/4] fix teleport
+
+---
+ .../worldguardextraflags/listeners/EntityListener.java          | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+diff --git a/Spigot/src/main/java/net/goldtreeservers/worldguardextraflags/listeners/EntityListener.java b/Spigot/src/main/java/net/goldtreeservers/worldguardextraflags/listeners/EntityListener.java
+index 04df148..91dd76e 100644
+--- a/Spigot/src/main/java/net/goldtreeservers/worldguardextraflags/listeners/EntityListener.java
++++ b/Spigot/src/main/java/net/goldtreeservers/worldguardextraflags/listeners/EntityListener.java
+@@ -85,7 +85,7 @@ public class EntityListener implements Listener
+ 					event.setCancelled(true);
+ 
+ 					//Prevent the player from being allowed to glide by spamming space
+-					player.teleport(player.getLocation());
++					player.teleportAsync(player.getLocation());
+ 
+ 					break;
+ 				}
+-- 
+2.50.1.windows.1
+
