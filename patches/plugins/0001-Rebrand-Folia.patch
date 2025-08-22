@@ -1,16 +1,16 @@
-From 94eeec11de1000f6f2ca9816bfef89ae0304682c Mon Sep 17 00:00:00 2001
+From 7ff13b88c37871f461ef6e7a73f415a078530d8e Mon Sep 17 00:00:00 2001
 From: Euphyllia Bierque <bierque.euphyllia@gmail.com>
-Date: Fri, 22 Aug 2025 01:45:47 +0200
+Date: Fri, 22 Aug 2025 02:24:39 +0200
 Subject: [PATCH 1/4] Rebrand Folia
 
 ---
- Spigot/pom.xml                       | 10 +++++-----
+ Spigot/pom.xml                       | 12 ++++++------
  Spigot/src/main/resources/plugin.yml |  1 +
  WG/pom.xml                           | 10 +++++-----
- 3 files changed, 11 insertions(+), 10 deletions(-)
+ 3 files changed, 12 insertions(+), 11 deletions(-)
 
 diff --git a/Spigot/pom.xml b/Spigot/pom.xml
-index 71e32f5..6931a40 100644
+index 71e32f5..2aa6c07 100644
 --- a/Spigot/pom.xml
 +++ b/Spigot/pom.xml
 @@ -50,8 +50,8 @@
@@ -34,6 +34,15 @@ index 71e32f5..6931a40 100644
 +			<groupId>io.papermc.paper</groupId>
 +			<artifactId>paper-api</artifactId>
 +			<version>1.21.1-R0.1-SNAPSHOT</version>
+ 			<scope>provided</scope>
+ 		</dependency>
+ 		<dependency>
+@@ -108,7 +108,7 @@
+ 		<dependency>
+ 			<groupId>com.comphenix.protocol</groupId>
+ 			<artifactId>ProtocolLib</artifactId>
+-			<version>4.5.0</version>
++			<version>5.3.0</version>
  			<scope>provided</scope>
  		</dependency>
  		<dependency>
